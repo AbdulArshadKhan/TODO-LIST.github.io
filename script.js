@@ -8,7 +8,7 @@ document.getElementById("btn").addEventListener("click", ()=>
 		if(a.length>0 && num.length>0)
 		{
 			newnode=document.createElement('div');
-			dp=document.createElement('span')
+			dp=document.createElement('p')
 			dp.innerHTML=a
 			//dp.style.display='inline';
 			newnode.appendChild(dp)
