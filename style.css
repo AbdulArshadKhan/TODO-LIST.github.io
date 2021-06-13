@@ -1,0 +1,36 @@
+*
+{
+	margin:0px auto;
+}
+body
+{
+	background-image: url(Roseanna.jpg);	
+}
+.heading
+{
+	text-align:center;
+	margin-top:40px;
+	margin-bottom: 20px;
+}
+.add-task
+{
+	text-align:center;
+	height: 50px;
+}
+#txt
+{
+	font-size: xx-large;
+}
+#btn
+{
+	font-size: larger;
+	margin-left: 10px;
+}
+.display
+{
+	margin-top:20px;
+	max-width: 40vw;
+	padding: 10px;
+	max-height: 471px;
+	overflow: hidden;
+}
