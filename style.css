@@ -23,8 +23,9 @@ body
 }
 #btn,#btn1
 {
-	font-size: larger;
+	font-size: x-large;
 	margin-left: 10px;
+	background-color:white;
 }
 .display
 {
