@@ -5,15 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body >
-	<div class='content'>
+	<div class='content' id="main-content">
 		<div class='heading'>
 			<h1>TO-DO LIST</h1>
 		</div>
 		<div class='add-task'>
-			<input type="text" name="task-name" id='txt' maxlength='50' >
+			<input type="text" name="task-name" id='txt' maxlength='50' placeholder="Add New Task">
 			<button id='btn'>ADD</button>
+			<button id='btn1'>CLEAR ALL</button>
 		</div>
-		<div class='display'>
+		<div class='display' id='task-list'>
 			<p id='dummy'>
 			</p>
 		</div>

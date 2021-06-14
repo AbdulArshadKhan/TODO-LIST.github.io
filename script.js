@@ -1,8 +1,21 @@
 num=[15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]
 /*let btns = document.getElementsByClassName("an")
 */
+
+document.getElementById("txt").addEventListener("keyup",function(event)
+{
+	if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("btn").click();
+  }
+})
+
+
+
+
 document.getElementById("btn").addEventListener("click", ()=>
 {
+	console.log('Button Clicked')
 		a=document.getElementById("txt").value;
 		document.getElementById("txt").value=''
 		if(a.length>0 && num.length>0)
@@ -31,9 +44,21 @@ document.getElementById("btn").addEventListener("click", ()=>
 			ref=document.getElementById('dummy')
 			ref.appendChild(newnode)
 		}
+
 	//console.log(document.getElementsByClassName("an").length)	
 })
-//console.log(document.getElementsByClassName("an").length)
+
+document.getElementById('btn1').addEventListener("click",()=>
+{
+	document.getElementById('task-list').innerHTML=''
+	tempar=document.createElement('p')
+	tempar.setAttribute('id', 'dummy')
+	//document.getElementById('dummy').innerHTML='No Tasks Added'
+	document.getElementById('task-list').appendChild(tempar)
+	num=[15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]	
+})
+
+
 document.addEventListener('click',function(e){
     
     for(i=1;i<16;i++)
@@ -44,6 +69,10 @@ document.addEventListener('click',function(e){
           	num.push(i)
           	temp.parentNode.removeChild(temp)
           	console.log(`Button ${i} removed`)
+   //        	if(num.length===15)
+			// 	document.getElementById('dummy').innerHTML='No Tasks Added'
+			// else
+			// 	document.getElementById('dummy').innerHTML=''
     	}
     }
     //console.log(num.length)
