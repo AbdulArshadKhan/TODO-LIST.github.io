@@ -183,7 +183,8 @@ document.addEventListener('click',function(e){
     	if(e.target && e.target.id== `b${i}`) 		// Line 37 to Line 50 are my learnings in this project
     	{
           	temp1=document.getElementById(`p${i}`).innerText
-          	message[i-1]=temp1.strike()
+          	index=order.indexOf(`${i}`)
+          	message[index]=temp1.strike()
           	document.getElementById(`p${i}`).innerHTML=temp1.strike()
           	localStorage.setItem('mess',JSON.stringify(message))
     	}
